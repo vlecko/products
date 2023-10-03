@@ -1,22 +1,21 @@
-<template>
-  <HelloWorld/>
-</template>
-
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import MainPage from '@/pages/MainPage.vue';
 </script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<template>
+	<MainPage />
+</template>
+
+<style lang="scss">
+@import "./styles/global.scss";
+
+#app {
+	width: 849px;
+	height: 660px;
+	margin: 0 auto;
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 </style>
